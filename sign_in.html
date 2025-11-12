@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		body
+		{
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url(images/bc3.jpg);
+		}
+		
+		.navbar 
+		{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #85c1e9, #2e86c1, #85c1e9);
+    padding: 0px;
+    color: purple;
+    text-align: center;
+
+}
+.navbar .logo 
+{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar input 
+{
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+
+.form-container
+{
+	width: 100%;
+	text-align: center;
+	background: orange;
+	margin-top: 5px;
+	padding: 5px;
+	font-size: 15px;
+}
+.container 
+{
+	background-color: rgba(178, 189, 219, 0.7);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			width: 50%;
+    max-width: 400px;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 25px;
+			
+			
+			text-align: center;
+}
+.form-group 
+{
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        .container input
+		{
+			width: 80%;
+            padding: 8px;
+            margin-top: 5px;
+		}
+		
+        .button
+	{
+		background-color: #085dd4;
+		color: white;
+		margin: 5px 10px;
+		padding: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		border: none;
+	}
+	.button a 
+	{
+		color: white;
+		background-color: #085dd4;
+		text-decoration: none;
+	}
+	.title
+	{
+		text-align: center;
+		text-decoration: none;
+		list-style-type: none;
+		color: black;
+
+	}
+	.title a 
+	{
+		text-decoration: none;
+	}
+	.button:hover 
+{
+    background-color: #3700b3;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+
+    .social
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+}
+
+.social a
+{
+    text-decoration: none;
+}
+
+.social a:hover
+{
+    background: #f39c12;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ .footer 
+       {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           background-color: rgba(255, 222, 133, 0.6);
+            padding: 20px;
+            align-items: flex-start;
+        }
+        .footer-column 
+        {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-column img 
+        {
+            width: 100px;
+            height: 100px;
+        }
+         
+        .footer-column h3 
+        {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .footer-column ul 
+        {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li 
+        {
+            margin: 5px 0;
+        }
+        .footer-column ul li a 
+        {
+            text-decoration: none;
+            color: black;
+        }
+         .contact
+          {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .logo2 
+        {
+            width: 100px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .social-icons 
+        {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a 
+        {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .terms
+        {
+            text-align: center;
+            font-size: 15px;
+           background-color: rgba(255, 222, 133, 0.6);
+        }
+
+
+
+
+
+
+		</style>
+
+
+
+</head>
+<body>
+	<header>
+		
+
+		<div class="navbar">
+            <h2>Sign In</h2>
+           
+            
+        </div>
+    </header>
+    
+
+	 <form class="container">
+	 	 <h2>Sign In here!</h2>
+	 	 <br>
+            <div class="form-group">
+                <label for="phone-email">Phone or Email Address :</label>
+                <input type="text" id="phone-email" placeholder="Phone Number or Email address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div><br><br>
+     
+                 <a href="#" class="title">Forgot Password?</a>
+            </div>
+           <button class="button">Sign In</button><br>
+            <button class="button"><a href="register.html">Create New Account</a></button><br><br><hr>
+					<button class="button"><a href="css_project.html">Back</a></button><br>
+					<div class="social">
+                                <span><a href="https://www.google.com"><i class="fa-brands fa-google"></i> google</a></span>
+                                <span><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> facebook</a></span>                
+                            </div>
+
+
+</form>
+ <footer class="footer">
+       
+<div class="footer-column">
+    
+
+            <img src="images/ban.png" alt="" class="logo2">
+        
+        
+            <p>Artisan Alcove.com</p>
+        
+        <div class="contact">
+            Got Question? Call us 9 AM- 10 PM
+        </div>
+        <div class="phone">
+            01674423561
+        </div>
+        <div class="email">
+            farjanamaya61@gmail.com
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+       
+    
+    <div class="footer-column">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Track My Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">How To Shop On Artisan Alcove </a></li>
+                <li><a href="#">Featured Recommendation</a></li>
+                <li><a href="#">Cancellation, Return & Refund</a></li>
+            </ul>
+        </div>
+        
+
+    </footer>
+    <div class="terms">
+             @copy; 2025  Stationary site. All rights reserved.
+        </div>
+
+
+
+
+
+
+
+            </body>
+</html>

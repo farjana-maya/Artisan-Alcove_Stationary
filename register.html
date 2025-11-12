@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		body
+		{
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url(images/bc3.jpg);
+		}
+		
+		.navbar 
+		{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    color: #d35400;
+    font-size: 30px;
+}
+
+
+.navbar .logo h2 
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.reg-box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(178, 189, 219, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.form-group
+{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.form-group input,
+.form-group select
+{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-group {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-group select {
+    width: 40%;
+}
+
+.gender-group div {
+    display: flex;
+    gap: 10px;
+}
+
+.from-button
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.others
+{
+    margin-top: 10px;
+    display: grid;
+    gap: 10px;
+    align-items: center;
+}
+.others p
+{
+    text-align: center;
+}
+
+
+.others p a
+{
+    text-decoration: none;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+
+    .social
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+}
+
+.social a
+{
+    text-decoration: none;
+}
+
+.social a:hover
+{
+    background: #f39c12;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ .footer 
+       {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           background-color: rgba(255, 222, 133, 0.6);
+            padding: 20px;
+            align-items: flex-start;
+        }
+        .footer-column 
+        {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-column img 
+        {
+            width: 100px;
+            height: 100px;
+        }
+         
+        .footer-column h3 
+        {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .footer-column ul 
+        {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li 
+        {
+            margin: 5px 0;
+        }
+        .footer-column ul li a 
+        {
+            text-decoration: none;
+            color: black;
+        }
+         .contact
+          {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .logo2 
+        {
+            width: 100px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .social-icons 
+        {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a 
+        {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .terms
+        {
+            text-align: center;
+            font-size: 15px;
+           background-color: rgba(255, 222, 133, 0.6);
+        }
+
+	
+	</style>
+
+
+
+</head>
+<body>
+	<header>
+
+		<div class="navbar">
+            
+                <h2>Register Form</h2>
+        
+            
+            
+        </div>
+	</header>
+
+	
+		<main>
+        <div class="reg-box">
+            <h2>Sign up here!</h2>
+            <br>
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">User Name:</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Enter your user name">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Contact No:</label>
+                    <div class="phone-group">
+                        <select id="country-code">
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+44">+44 (UK)</option>
+                            <option value="+91">+91 (India)</option>
+                            <option value="+61">+61 (Australia)</option>
+                            <option value="+880">+880 (Bangladesh)</option>
+                        </select>
+                        <input type="tel" id="phone-number" placeholder="Enter phone number" required>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter e-mail">
+            </div>
+
+            <div class="form-group gender-group">
+                <label>Gender:</label>
+                <div>
+                    <label><input type="radio" name="gender" value="male" checked> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password must be 8 characters" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password must be 8 characters" required>
+            </div>
+            <button class="from-button">Submit</button>
+                <section class="others">
+                    <p>Already have an account? <a href="sign_in.html">Log in Here</a></p>
+                    <p>Or, sign up with</p>
+                            <div class="social">
+                                <span><a href="https://www.google.com"><i class="fa-brands fa-google"></i> google</a></span>
+                                <span><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> facebook</a></span>                
+                            </div>
+                </section>
+        </div>
+    </main>
+
+   <footer class="footer">
+       
+<div class="footer-column">
+    
+
+            <img src="images/ban.png" alt="" class="logo2">
+        
+        
+            <p>Artisan Alcove.com</p>
+        
+        <div class="contact">
+            Got Question? Call us 9 AM- 10 PM
+        </div>
+        <div class="phone">
+            01674423561
+        </div>
+        <div class="email">
+            farjanamaya61@gmail.com
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+       
+    
+    <div class="footer-column">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Addresses</a></li>
+                <li><a href="#">My Wishlist</a></li>
+                <li><a href="#">Order History</a></li>
+                <li><a href="#">Track My Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>CUSTOMER SERVICE</h3>
+            <ul>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Support Center</a></li>
+                <li><a href="#">How To Shop On Artisan Alcove </a></li>
+                <li><a href="#">Featured Recommendation</a></li>
+                <li><a href="#">Cancellation, Return & Refund</a></li>
+            </ul>
+        </div>
+        
+
+    </footer>
+    <div class="terms">
+             @copy; 2025  Stationary site. All rights reserved.
+        </div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

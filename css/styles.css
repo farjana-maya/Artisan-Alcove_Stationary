@@ -1,0 +1,361 @@
+body
+{
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #138d75;
+		}
+		.top-bar
+		{
+			background-color: white;
+			color: black;
+			text-align: center;
+			padding: 5px 0;
+			font-size: 14px;
+		}
+		.auth-links
+		{
+			float: right;
+			margin-right: 20px;
+			font-size: 14px;
+		}
+        
+
+    
+       
+		.navbar 
+		{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #48c9b0, #27ae60, #239b56, #48c9b0);
+    padding: 15px;
+    color: blue;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar .logo 
+{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.navbar input 
+{
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.nav-links a 
+{
+    color: blue;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.nav-links images
+{
+	width: 10%;
+	height: 5%;
+}
+
+
+        
+.banner 
+{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.banner img 
+{
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+	 text-align: center;
+}
+
+
+
+.product-categories 
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background:#52be80;
+}
+
+.category 
+{
+    text-align: center;
+}
+
+.category img 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.container
+{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between ;
+            margin: 5px;
+        
+
+        }
+       .sidebar
+       {
+        width: 250px;
+        margin: 0;
+        padding: 20px;
+        background-color: lightyellow;
+       }
+
+            .menu-list
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                list-style: none;
+            }
+            .menu-list ul 
+            {
+                 list-style: none;
+            padding: 0;
+            }
+
+            .menu-list li
+            {
+                margin: 10px 0;
+            border-bottom: 1px solid green;
+            }
+
+            .menu-list a
+            {
+                text-decoration: none;
+                list-style: none;
+                display: block;
+                padding: 10px;
+                color: black;
+                transition: 0.3s;
+
+           }
+           .menu-list a:hover
+           {
+            
+            padding-left: 10px;
+            background-color: #f7dc6f;
+           }
+           .sub-container
+           {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% - 250px);
+           }
+
+        
+        .headline
+        {
+            
+            text-align: center;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255 , 0.6);
+            color: black;
+            width: 100%
+
+           
+        }
+
+        .products 
+        {
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px 25px;
+}
+
+.product-card 
+{
+    float: left;
+    width: 240px;
+    height: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.product-card img
+ {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.product-card h3 
+{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.price
+ {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+
+        .product-card button
+        {
+            background-color: 028A0F;
+
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            outline-style: solid;
+            outline-color: lightblue;
+        }
+
+        .product-card button a 
+        {
+            text-decoration: none;
+            outline-color: lightyellow;
+
+        }
+
+        .pr-btn
+        {
+            display: inline-block;
+            gap: 10px;
+        }
+
+
+        
+
+
+       .footer 
+       {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #f8f8f8;
+            padding: 20px;
+            align-items: flex-start;
+        }
+        .footer-column 
+        {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .footer-column img 
+        {
+            width: 100px;
+            height: 100px;
+        }
+         
+        .footer-column h3 
+        {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .footer-column ul 
+        {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li 
+        {
+            margin: 5px 0;
+        }
+        .footer-column ul li a 
+        {
+            text-decoration: none;
+            color: black;
+        }
+         .contact
+          {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .logo2 
+        {
+            width: 100px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .social-icons 
+        {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a 
+        {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        .terms
+        {
+            text-align: center;
+            font-size: 15px;
+            background-color: #f8f8f8;
+        }
+        .view
+        {
+            float: inline-end;
+            
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            position: center;
+
+
+
+        }
+        .sidebar-button
+        {
+            font-family: 25px;
+            padding: 5px;
+            background-color: lightcyan;
+            width: 100px;
+            height: 40px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+            outline-style: solid;
+            outline-color: skyblue;
+
+        
+        }
+.sidebar-button:hover
+{
+    background-color: lightblue;
+    transition: 0.3s;
+}
+
+
+       
+            
